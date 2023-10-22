@@ -1,9 +1,27 @@
+import Artworks from "./components/Artworks";
+import CreateNFT from "./components/CreateNFT";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Transactions from "./components/Transactions";
+
 const App = () => {
   return (
     <div className="min-h-screen">
-      <h4 className="text-3xl">Hello Truffle and Tailwind</h4>
-    </div>
-  )
-}
+      <div className="gradient-bg-hero">
+        <Header />
+        <Hero />
+      </div>
+      <Artworks />
+      <Transactions />
 
-export default App
+      <CreateNFT />
+
+      <div>
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default App;
