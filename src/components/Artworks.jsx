@@ -1,3 +1,9 @@
+import { setGlobalState } from "../store";
+
+const openNFTModal = () => {
+  setGlobalState("showModal", "scale-100");
+};
+
 const Artworks = () => {
   return (
     <div className="bg-[#151c25] gradient-bg-artworks">
@@ -41,7 +47,10 @@ const Card = ({ nft }) => (
         <p className="text-sm font-semibold">0.34 ETH</p>
       </div>
 
-      <button className="shadow-lg shadow-black text-sm bg-[#e32970] hover:bg-[#bf255f] rounded-full p-2">
+      <button
+        className="shadow-lg shadow-black text-sm bg-[#e32970] hover:bg-[#bf255f] rounded-full p-2"
+        onClick={() => openNFTModal()}
+      >
         View Details
       </button>
     </div>

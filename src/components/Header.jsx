@@ -11,10 +11,10 @@ const Header = () => {
         <li className="mx-4 cursor-pointer">Market</li>
         <li className="mx-4 cursor-pointer">Artist</li>
         <li className="mx-4 cursor-pointer">Features</li>
-        <li className="mx-4 cursor-pointer">Community</li>
+        <li className="mx-4 cursor-pointer">Login</li>
       </ul>
 
-      <button className="shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bf255f] md:text-xs p-2 rounded-full">
+      <button className="shadow-xl flex justify-center items-center shadow-black text-white bg-[#e32970] hover:bg-[#bf255f] md:text-xs p-2.5 px-2.5 rounded-full font-medium">
         Connect Wallet
       </button>
     </div>
